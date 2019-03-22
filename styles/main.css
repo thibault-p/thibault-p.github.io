@@ -1,0 +1,262 @@
+body {
+    font-family: 'Myriad Pro', 'PT Sans', sans-serif;
+    color: #373737;
+    line-height: 1.5em;
+}
+
+h2 {
+    font-family: 'Myriad Pro Light', 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 2em;
+}
+
+#gotoTop {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    z-index: 9000;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 0.8s;
+	-moz-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+}
+
+#gotoTop a, #gotoTop a:visited, #gotoTop a:hover {
+    color: #373737;
+    text-decoration: none;
+} 
+
+
+#gotoTop.visible {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.8s;
+	-moz-transition: opacity 0.8s;
+	transition: opacity 0.8s;
+}
+
+#gotoTop a, #gotoTop a:visited {
+    color: #373737;
+}
+
+.button-primary {
+    padding: 1.5em 3em;
+    font-size: 0.8em;
+}
+
+.home {
+    color: white;
+    background: url('../images/avepy-home-background.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.logo {
+    margin: auto;
+}
+
+.menu {
+    text-align: center;
+    margin: 4em 0 8em; 
+    vertical-align: center;
+}
+
+.menu-item {
+    display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+    display: -moz-box;      /* OLD: Firefox (buggy) */
+    display: -ms-flexbox;   /* MID: IE 10 */
+    display: -webkit-flex;  /* NEW, Chrome 21–28, Safari 6.1+ */
+    display: flex; 
+}
+
+.menu-item a {
+    font-size: 1.1em;
+}
+
+.menu-item a, .menu-item a:hover, .menu-item a:visited {
+    text-align: center;
+    margin: auto;
+    font-size: 1.1em;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+.pure-g [class*=pure-u] {
+    font-family: 'Myriad Pro', 'PT Sans', sans-serif;
+}
+
+a.inline-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #373737;
+}
+
+a.inline-link:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.quote {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+}
+
+.quote p {
+    font-size: 2em;
+    line-height: 1.2em;
+    font-weight: lighter;
+    margin-bottom: 0.5em;
+}
+
+.quote .author {
+    margin-top: 0;
+    font-size: 1em;
+    text-align: right;
+}
+
+.button-primary {
+    font-family: 'Myriad Pro', 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    background-color: #33282c;
+    color: white;
+}
+
+.section-1 {
+    background-image: url('../images/avepy-part1-background.jpg');
+    background-repeat: no-repeat;
+    background-color: #f5f6f8;
+}
+
+.section-2 {
+    background-image: url('../images/avepy-part2-background.jpg');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+}
+
+.section-2 h3 {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.section-2 p {
+    margin-top: 0;
+}
+
+ul{
+    font-weight: bold;
+    padding-left: 1em;
+    margin-top: 0em;
+}
+
+.section-2 li {
+    margin-bottom: 0.6em;
+    padding-left: 0;
+}
+
+.section-3 {
+    color: white;
+    background: url('../images/avepy-part3-background.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 1.2em;
+}
+
+.section-3 p {
+    font-style: italic;
+}
+
+.section-4 {
+    background-color: #f5f6f7;
+}
+
+.section-5 {
+    background: url('../images/avepy-contact-background.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 40em;
+}
+
+.section-5 h2 {
+    color:white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.contact-sheet {
+    padding: 2em;
+    font-size: 1.2em;
+}
+
+.contact h2 {
+    color: #33282c;
+}
+
+.pay-info {
+    margin-top: 2.5em;
+}
+
+.detail {
+    overflow: hidden;
+    -webkit-transition: max-height 0.8s;
+	-moz-transition: max-height 0.8s;
+	transition: max-height 0.8s;
+    max-height: 0;
+}
+
+.detail.more {    
+    max-height:9000em;
+}
+
+.button-show-detail.more {
+    display: none;
+}
+
+footer {
+    margin-top: 5em;
+}
+
+.credits {
+    letter-spacing: 2px;
+    font-size: 0.7em;
+}
+
+footer a{
+    color: #373737;
+    text-transform: uppercase;
+}
+
+.portrait {
+    justify-content: center;
+}
+
+@media screen and (max-width: 48em) {
+    .menu-item{
+        display: none;
+    }
+
+    .menu {
+        margin: 20vh auto 20vh; 
+    }
+
+    .quote p {
+        font-size: 1.1em;
+    }
+
+    .button-show-detail {
+        text-align: center;
+    }
+}
