@@ -89,7 +89,6 @@ h2 {
 }
 
 
-
 .pure-g [class*=pure-u] {
     font-family: 'Myriad Pro', 'PT Sans', sans-serif;
 }
@@ -243,6 +242,10 @@ footer a{
     justify-content: center;
 }
 
+.small-portrait{
+    display: none;
+}
+
 @media screen and (max-width: 48em) {
     .menu-item{
         display: none;
@@ -258,5 +261,13 @@ footer a{
 
     .button-show-detail {
         text-align: center;
+    }
+
+    .portrait {
+        display: none;
+    }
+
+    .small-portrait {
+        display: inline;
     }
 }
