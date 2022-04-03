@@ -1,0 +1,164 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    color: #222d38;
+    background-color: #fffef4;
+    font-family: 'Noto Serif', serif;
+    overflow-y: hidden;
+    font-size: 0.8em;
+}
+
+header {
+    top: 0.4em;
+    left: 0.2em;
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    position: fixed;
+    font-size: 2em;
+    transform: rotate(-6deg);
+}
+
+header div {
+    position: relative;
+    top: -0.2em;
+    font-size: 1.3em;
+    color: rgb(66, 6, 6);
+    transform: rotate(3deg);
+}
+
+a, a:visited, a:active, a:hover {
+    color: #405161;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.home {
+    font-size: 1.5em;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    border: solid 0.1em #222d38;
+    background-color: transparent;
+    transition: 0.2s ease-in-out;
+    z-index: 9000;
+    text-align: center;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+}
+
+.home:hover {
+    background-color: #222d38;
+    color: white;
+}
+
+.home span {
+    position: relative;
+    top: -0.1em;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 200%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    z-index: 1;
+    font-size: 1.2em;
+    text-align: center;
+    opacity: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: all 0.6s ease-in-out;
+}
+
+section.active {
+    opacity: 1;
+    top: 0;
+    z-index: 999;
+}
+
+.inner {
+    background-color: #fffef4;
+    flex-direction: column;
+    flex-basis: 80%;
+    padding: 2em;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    margin: 0;
+    margin-top: 2em;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+li.response {
+    display: block;
+    border: solid 0.2em #222d38;
+    padding: 1em;
+    margin: 0.5em;
+    background-color: transparent;
+    transition: 0.2s ease-in-out;
+}
+
+li.response:hover {
+    background-color: #222d38;
+    color: white;
+}
+
+.candidats li {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0.5em;
+}
+
+.candidats li span{
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    flex-basis: 50%;
+}
+
+.candidats li a{
+    text-align: right;
+    right: 0;
+    flex-basis: 50%;
+}
+
+
+.note {
+    font-size: 0.6em;
+    font-style: italic;
+    color: #405161;
+}
+
+@media (min-width: 600px)  {
+    /* smartphones, iPhone, portrait 480x320 phones */
+    body {
+        font-size: 1em;
+    }
+}
